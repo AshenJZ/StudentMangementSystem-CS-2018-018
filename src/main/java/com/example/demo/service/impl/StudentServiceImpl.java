@@ -16,23 +16,6 @@ public class StudentServiceImpl implements StudentService {
     @Autowired
     private StudentRepository studentRepository;
 
-//    @Override
-//    public List<Student> getStudentByCity(String city) {
-//        List<Student> studentList = new ArrayList<>();
-//        studentList.add(new Student("CS/2018/004","Ashaka","Colombo"));
-//        studentList.add(new Student("CS/2018/006","harshika","Colombo"));
-//        studentList.add(new Student("CS/2018/010","Nadun perera","kalutara"));
-//        studentList.add(new Student("CS/2018/001","Nadun hirushan","Gampaha"));
-//
-//        return studentList.stream().filter(student -> student.getCity().equals(city)).collect(Collectors.toList());
-//    }
-
-
-//    @Override
-//    public List<Student> getStudentByCity(String city) {
-//        return studentRepository.findStudentByCity(city);
-//    }
-
     @Override
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
